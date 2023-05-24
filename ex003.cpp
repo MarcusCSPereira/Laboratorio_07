@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int timer(int n1);
+void timer();
 
 int main(){
     	
@@ -9,18 +9,15 @@ int main(){
 
     cout << "Digite um valor: ";
     cin >> a;
-    a = timer(a);
+    timer();
 
     cout << "O valor que vc digitou eh... " << a;
-
-
 
     return 0;
 }
 
-int timer(int n1){
-    for(int cont = 1; cont <= 10000000;){
+void timer(){
+    for(int cont = 1; cont <= 1000000000;){
         cont++;
     }
-    return n1;
 }
